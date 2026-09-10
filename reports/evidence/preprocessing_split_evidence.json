@@ -1,0 +1,64 @@
+{
+  "project_title": "Project 1 \u2014 Diabetes Diagnosis Prediction",
+  "dataset": "./data/diabetes.csv",
+  "dataset_sha256": "698c203a14aa31941d2251175330c9199f3ccdb31597abbba2a3e35416257a72",
+  "target": "Outcome",
+  "features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "test_size": 0.2,
+  "random_state": 42,
+  "stratification": true,
+  "total_rows": 768,
+  "training_rows": 614,
+  "test_rows": 154,
+  "training_target_distribution": {
+    "0": 400,
+    "1": 214
+  },
+  "test_target_distribution": {
+    "0": 100,
+    "1": 54
+  },
+  "training_target_percentages": {
+    "0": 65.15,
+    "1": 34.85
+  },
+  "test_target_percentages": {
+    "0": 64.94,
+    "1": 35.06
+  },
+  "zero_as_missing_columns": [
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI"
+  ],
+  "clinical_missing_train": {
+    "Glucose": 4,
+    "BloodPressure": 23,
+    "SkinThickness": 175,
+    "Insulin": 290,
+    "BMI": 9
+  },
+  "clinical_missing_test": {
+    "Glucose": 1,
+    "BloodPressure": 12,
+    "SkinThickness": 52,
+    "Insulin": 84,
+    "BMI": 2
+  },
+  "target_leakage_detected": false,
+  "raw_dataset_modified": false,
+  "mutation_performed": false,
+  "timestamp_utc": "2026-09-10T00:58:22.016257+00:00",
+  "status": "PASS"
+}

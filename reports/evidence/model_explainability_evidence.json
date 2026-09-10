@@ -1,0 +1,95 @@
+{
+  "project_title": "Project 1 \u2014 Diabetes Diagnosis Prediction",
+  "step": "Step 7 \u2014 Champion Model Explainability",
+  "champion_model": "Baseline Logistic Regression",
+  "pipeline": [
+    "StandardScaler",
+    "LogisticRegression"
+  ],
+  "features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "intercept": -0.8749604861204671,
+  "feature_explainability": [
+    {
+      "Feature": "Glucose",
+      "Coefficient": 1.1441512736875823,
+      "Odds_Ratio": 3.139775415661631,
+      "Absolute_Coefficient": 1.1441512736875823,
+      "Direction": "Positive association with predicted diabetes"
+    },
+    {
+      "Feature": "BMI",
+      "Coefficient": 0.7138934066356618,
+      "Odds_Ratio": 2.041925849982207,
+      "Absolute_Coefficient": 0.7138934066356618,
+      "Direction": "Positive association with predicted diabetes"
+    },
+    {
+      "Feature": "Pregnancies",
+      "Coefficient": 0.37317821047634997,
+      "Odds_Ratio": 1.4523431395344013,
+      "Absolute_Coefficient": 0.37317821047634997,
+      "Direction": "Positive association with predicted diabetes"
+    },
+    {
+      "Feature": "DiabetesPedigreeFunction",
+      "Coefficient": 0.2555267466921691,
+      "Odds_Ratio": 1.2911415463215754,
+      "Absolute_Coefficient": 0.2555267466921691,
+      "Direction": "Positive association with predicted diabetes"
+    },
+    {
+      "Feature": "BloodPressure",
+      "Coefficient": -0.19763683090179185,
+      "Odds_Ratio": 0.8206678402241678,
+      "Absolute_Coefficient": 0.19763683090179185,
+      "Direction": "Negative association with predicted diabetes"
+    },
+    {
+      "Feature": "Age",
+      "Coefficient": 0.1841789861063154,
+      "Odds_Ratio": 1.202230986483261,
+      "Absolute_Coefficient": 0.1841789861063154,
+      "Direction": "Positive association with predicted diabetes"
+    },
+    {
+      "Feature": "Insulin",
+      "Coefficient": -0.1273082304804989,
+      "Odds_Ratio": 0.880462245467267,
+      "Absolute_Coefficient": 0.1273082304804989,
+      "Direction": "Negative association with predicted diabetes"
+    },
+    {
+      "Feature": "SkinThickness",
+      "Coefficient": 0.066534971389718,
+      "Odds_Ratio": 1.0687983407849175,
+      "Absolute_Coefficient": 0.066534971389718,
+      "Direction": "Positive association with predicted diabetes"
+    }
+  ],
+  "interpretation_method": [
+    "Logistic regression coefficients",
+    "Standardized feature coefficients",
+    "Odds ratios"
+  ],
+  "limitations": [
+    "Model coefficients describe statistical associations used by the model, not causal relationships.",
+    "Odds ratios here correspond to a one-standard-deviation increase because the model uses StandardScaler.",
+    "The coefficients should not be interpreted as medical diagnosis rules.",
+    "Clinical validity, calibration, external validation, and prospective validation are outside this project scope.",
+    "Feature importance does not establish that a feature causes diabetes."
+  ],
+  "test_set_used_for_fitting": false,
+  "raw_dataset_modified": false,
+  "mutation_performed": false,
+  "timestamp_utc": "2026-09-10T01:02:56.068056+00:00",
+  "status": "PASS"
+}

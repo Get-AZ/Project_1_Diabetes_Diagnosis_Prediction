@@ -1,0 +1,43 @@
+{
+  "project_title": "Project 1 \u2014 Diabetes Diagnosis Prediction",
+  "step": "Step 9 \u2014 Final Champion Model & Reproducible Artifact",
+  "model_name": "Project_1_Diabetes_Baseline_Logistic_Regression",
+  "model_version": "1.0.0",
+  "champion": "Baseline Logistic Regression",
+  "artifact_path": "./artifacts/diabetes_baseline_logistic_regression.joblib",
+  "metadata_path": "./artifacts/model_metadata.json",
+  "dataset_sha256": "698c203a14aa31941d2251175330c9199f3ccdb31597abbba2a3e35416257a72",
+  "model_sha256": "5db1b088d1bfb18c74c9e7622e013c4258759f9f6f9e34a6a4d4398f8febba9c",
+  "model_size_bytes": 1953,
+  "metrics": {
+    "accuracy": 0.7142857142857143,
+    "precision": 0.6086956521739131,
+    "recall": 0.5185185185185185,
+    "f1": 0.56,
+    "roc_auc": 0.8229629629629629
+  },
+  "reproducibility": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true,
+    "features": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age"
+    ],
+    "target": "Outcome"
+  },
+  "governance": {
+    "test_set_used_for_fitting": false,
+    "raw_dataset_modified": false,
+    "mutation_performed": false,
+    "deployment_performed": false
+  },
+  "timestamp_utc": "2026-09-10T01:08:21.236187+00:00",
+  "status": "PASS"
+}

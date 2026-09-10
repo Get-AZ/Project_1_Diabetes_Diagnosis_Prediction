@@ -1,0 +1,77 @@
+{
+  "project_title": "Project 1 \u2014 Diabetes Diagnosis Prediction",
+  "model_name": "Project_1_Diabetes_Baseline_Logistic_Regression",
+  "model_version": "1.0.0",
+  "model_type": "Logistic Regression",
+  "pipeline": [
+    "StandardScaler",
+    "LogisticRegression"
+  ],
+  "target": "Outcome",
+  "features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "training_rows": 614,
+  "test_rows": 154,
+  "test_size": 0.2,
+  "random_state": 42,
+  "stratification": true,
+  "metrics": {
+    "accuracy": 0.7142857142857143,
+    "precision": 0.6086956521739131,
+    "recall": 0.5185185185185185,
+    "f1": 0.56,
+    "roc_auc": 0.8229629629629629
+  },
+  "default_threshold": 0.5,
+  "threshold_analysis": {
+    "highest_recall_grid_threshold": 0.25,
+    "highest_recall": 0.8889,
+    "highest_f1_grid_threshold": 0.25,
+    "highest_f1": 0.7007,
+    "clinical_threshold_selected": false
+  },
+  "dataset": {
+    "path": "./data/diabetes.csv",
+    "sha256": "698c203a14aa31941d2251175330c9199f3ccdb31597abbba2a3e35416257a72",
+    "rows": 768,
+    "columns": 9
+  },
+  "artifact": {
+    "path": "./artifacts/diabetes_baseline_logistic_regression.joblib",
+    "sha256": "5db1b088d1bfb18c74c9e7622e013c4258759f9f6f9e34a6a4d4398f8febba9c",
+    "size_bytes": 1953
+  },
+  "environment": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "governance": {
+    "test_set_used_for_fitting": false,
+    "raw_dataset_modified": false,
+    "mutation_performed": false,
+    "clinical_validation": false,
+    "clinical_threshold_selected": false,
+    "deployment_performed": false
+  },
+  "limitations": [
+    "The model is a machine-learning project artifact, not a clinically validated diagnostic device.",
+    "The reported holdout metrics are based on one stratified train/test split.",
+    "The 0.50 threshold is the default reference threshold and was not selected as a clinical operating threshold.",
+    "The threshold analysis identified 0.25 as the highest-recall and highest-F1 point in the evaluated grid, but this does not establish clinical appropriateness.",
+    "External validation, calibration validation, prospective validation, and regulatory assessment are outside project scope."
+  ],
+  "timestamp_utc": "2026-09-10T01:08:21.236187+00:00",
+  "status": "PASS"
+}

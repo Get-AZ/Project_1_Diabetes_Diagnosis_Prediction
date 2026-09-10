@@ -1,0 +1,113 @@
+{
+  "project_title": "Project 1 \u2014 Diabetes Diagnosis Prediction",
+  "step": "Step 10 \u2014 Reproducibility & Artifact Validation",
+  "model_name": "Project_1_Diabetes_Baseline_Logistic_Regression",
+  "model_version": "1.0.0",
+  "artifact": {
+    "path": "./artifacts/diabetes_baseline_logistic_regression.joblib",
+    "exists": true,
+    "loaded_successfully": true,
+    "size_bytes": 1953,
+    "expected_sha256": "5db1b088d1bfb18c74c9e7622e013c4258759f9f6f9e34a6a4d4398f8febba9c",
+    "actual_sha256": "5db1b088d1bfb18c74c9e7622e013c4258759f9f6f9e34a6a4d4398f8febba9c",
+    "sha256_match": true
+  },
+  "dataset": {
+    "path": "./data/diabetes.csv",
+    "rows": 768,
+    "columns": 9,
+    "expected_sha256": "698c203a14aa31941d2251175330c9199f3ccdb31597abbba2a3e35416257a72",
+    "actual_sha256": "698c203a14aa31941d2251175330c9199f3ccdb31597abbba2a3e35416257a72",
+    "sha256_match": true
+  },
+  "pipeline": {
+    "steps": [
+      "scaler",
+      "classifier"
+    ],
+    "expected_steps": [
+      "scaler",
+      "classifier"
+    ],
+    "structure_match": true,
+    "classifier": "LogisticRegression",
+    "classifier_type_match": true
+  },
+  "reproducibility": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true,
+    "test_rows": 154,
+    "prediction_count": 154,
+    "probability_count": 154,
+    "binary_predictions_valid": true,
+    "probabilities_valid": true
+  },
+  "metrics": {
+    "actual": {
+      "accuracy": 0.7142857142857143,
+      "precision": 0.6086956521739131,
+      "recall": 0.5185185185185185,
+      "f1": 0.56,
+      "roc_auc": 0.8229629629629629
+    },
+    "expected": {
+      "accuracy": 0.7143,
+      "precision": 0.6087,
+      "recall": 0.5185,
+      "f1": 0.56,
+      "roc_auc": 0.823
+    },
+    "tolerance": 5e-05,
+    "matches": {
+      "accuracy": true,
+      "precision": true,
+      "recall": true,
+      "f1": true,
+      "roc_auc": true
+    },
+    "all_metrics_match": true
+  },
+  "metadata_validation": {
+    "model_name_match": true,
+    "version_match": true,
+    "target_match": true,
+    "features_match": true,
+    "random_state_match": true,
+    "test_size_match": true,
+    "dataset_hash_match": true,
+    "model_hash_match": true
+  },
+  "governance": {
+    "test_set_used_for_fitting": false,
+    "raw_dataset_modified": false,
+    "artifact_modified": false,
+    "deployment_performed": false,
+    "mutation_performed": false
+  },
+  "validation_checks": {
+    "required_files_exist": true,
+    "dataset_hash_matches": true,
+    "model_hash_matches": true,
+    "artifact_loaded": true,
+    "pipeline_structure_matches": true,
+    "classifier_type_matches": true,
+    "feature_count_matches": true,
+    "prediction_count_matches": true,
+    "probability_count_matches": true,
+    "binary_predictions_valid": true,
+    "probabilities_valid": true,
+    "all_holdout_metrics_match": true,
+    "metadata_model_name_matches": true,
+    "metadata_version_matches": true,
+    "metadata_target_matches": true,
+    "metadata_features_match": true,
+    "metadata_random_state_matches": true,
+    "metadata_test_size_matches": true,
+    "metadata_dataset_hash_matches": true,
+    "metadata_model_hash_matches": true,
+    "previous_evidence_status_pass": true
+  },
+  "timestamp_utc": "2026-09-10T01:13:38.136520+00:00",
+  "status": "PASS"
+}

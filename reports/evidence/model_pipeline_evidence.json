@@ -1,0 +1,59 @@
+{
+  "project_title": "Project 1 \u2014 Diabetes Diagnosis Prediction",
+  "target": "Outcome",
+  "features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "training_rows": 614,
+  "test_rows": 154,
+  "random_state": 42,
+  "test_size": 0.2,
+  "baseline_model": {
+    "algorithm": "LogisticRegression",
+    "preprocessing": [
+      "StandardScaler"
+    ],
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "clinical_model": {
+    "algorithm": "LogisticRegression",
+    "preprocessing": [
+      "Zero-to-NaN conversion",
+      "Median imputation",
+      "StandardScaler"
+    ],
+    "zero_as_missing_columns": [
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI"
+    ],
+    "max_iter": 1000,
+    "random_state": 42
+  },
+  "baseline_classes": [
+    0,
+    1
+  ],
+  "clinical_classes": [
+    0,
+    1
+  ],
+  "baseline_prediction_count": 154,
+  "clinical_prediction_count": 154,
+  "pipeline_fitted": true,
+  "test_data_used_for_fitting": false,
+  "raw_dataset_modified": false,
+  "mutation_performed": false,
+  "timestamp_utc": "2026-09-10T00:59:39.730708+00:00",
+  "status": "PASS"
+}

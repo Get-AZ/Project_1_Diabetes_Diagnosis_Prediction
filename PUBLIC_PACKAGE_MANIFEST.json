@@ -1,0 +1,52 @@
+{
+  "step": "13-B-R3-R6-R3",
+  "timestamp_utc": "2026-09-10T04:13:09.756038+00:00",
+  "execution_mode": "CONTROLLED MUTATION",
+  "authorization": true,
+  "project_root": ".",
+  "public_package_root": "public",
+  "model": {
+    "sha256": "5db1b088d1bfb18c74c9e7622e013c4258759f9f6f9e34a6a4d4398f8febba9c",
+    "byte_for_byte_match_original": true,
+    "source_hash_verified_from_live_file": true
+  },
+  "dataset": {
+    "sha256_original": "698c203a14aa31941d2251175330c9199f3ccdb31597abbba2a3e35416257a72",
+    "included_in_public_package": false,
+    "publication_approved": false
+  },
+  "git": {
+    "initialized": false,
+    "commit_created": false,
+    "push_performed": false
+  },
+  "github": {
+    "repository_created": false
+  },
+  "internal_audit_history": {
+    "included": false
+  },
+  "public_files": [
+    "README.md",
+    "artifacts/diabetes_baseline_logistic_regression.joblib",
+    "artifacts/model_metadata.json",
+    "career/CV_RESUME_PROJECT_1.md",
+    "career/INTERVIEW_PREPARATION_PROJECT_1.md",
+    "data/README.md",
+    "notebooks/Project_1_Diabetes_Diagnosis_Prediction.ipynb",
+    "portfolio/PORTFOLIO_PROJECT_1.md",
+    "reports/PROFESSOR_CHECKLIST.md",
+    "reports/Professor_Submission_Report.pdf",
+    "reports/evidence/clinical_eda_evidence.json",
+    "reports/evidence/dataset_quality_evidence.json",
+    "reports/evidence/final_model_artifact_evidence.json",
+    "reports/evidence/model_evaluation_evidence.json",
+    "reports/evidence/model_explainability_evidence.json",
+    "reports/evidence/model_pipeline_evidence.json",
+    "reports/evidence/notebook_packaging_evidence.json",
+    "reports/evidence/preprocessing_split_evidence.json",
+    "reports/evidence/reproducibility_artifact_validation_evidence.json",
+    "reports/evidence/threshold_analysis_evidence.json",
+    "requirements.txt"
+  ]
+}
