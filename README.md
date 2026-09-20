@@ -1,3 +1,4 @@
+![Level 1 Diabetes Prediction](Level%201.png)
 # Project 1 — Diabetes Diagnosis Prediction
 
 A reproducible binary-classification project using Logistic Regression to predict
